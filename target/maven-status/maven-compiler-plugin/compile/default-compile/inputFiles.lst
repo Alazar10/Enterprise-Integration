@@ -1,0 +1,17 @@
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/ServiceApiApplication.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/config/JwtAuthenticationFilter.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/config/SecurityConfig.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/controller/AuthController.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/controller/ServiceEntityController.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/dto/AuthRequest.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/dto/AuthResponse.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/dto/RegisterRequest.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/dto/ServiceEntityDto.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/model/Role.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/model/ServiceEntity.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/model/User.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/repository/ServiceEntityRepository.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/repository/UserRepository.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/AuthService.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/JwtService.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/ServiceEntityService.java
