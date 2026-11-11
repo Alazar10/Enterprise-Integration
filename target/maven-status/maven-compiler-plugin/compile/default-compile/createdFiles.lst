@@ -1,5 +1,6 @@
 com/example/serviceapi/service/AuthService.class
 com/example/serviceapi/repository/ServiceEntityRepository.class
+com/example/serviceapi/service/CustomUserDetailsService.class
 com/example/serviceapi/repository/UserRepository.class
 com/example/serviceapi/model/User.class
 com/example/serviceapi/ServiceApiApplication.class

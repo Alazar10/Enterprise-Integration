@@ -11,6 +11,8 @@ public class ServiceEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private long userID;
+
     @Column(nullable = false)
     private String name;
 

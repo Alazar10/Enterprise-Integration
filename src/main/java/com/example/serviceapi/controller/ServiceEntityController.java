@@ -31,7 +31,7 @@ public class ServiceEntityController {
     }
 
     @PostMapping
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ServiceEntityDto> createService(@Valid @RequestBody ServiceEntityDto dto) {
         return ResponseEntity.status(HttpStatus.CREATED).body(service.createService(dto));
     }

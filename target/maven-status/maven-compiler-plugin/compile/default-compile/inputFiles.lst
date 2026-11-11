@@ -13,5 +13,6 @@
 /home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/repository/ServiceEntityRepository.java
 /home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/repository/UserRepository.java
 /home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/AuthService.java
+/home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/CustomUserDetailsService.java
 /home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/JwtService.java
 /home/alazar/Documents/Enterprise Integration/service-api/src/main/java/com/example/serviceapi/service/ServiceEntityService.java

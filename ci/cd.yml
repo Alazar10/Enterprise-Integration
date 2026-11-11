@@ -1,0 +1,42 @@
+name: Secure Build & Verification Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  static-security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  
+
+      - name: Dependency Check (SCA)
+      
+        run: |
+          mvn org.owasp:dependency-check-maven:check
+
+      - name: Verify No Rogue In-Repo Config Changes
+        run: |
+          if git diff --name-only origin/main...HEAD | grep -E 'sonar-project\.properties|pom\.xml'; then
+            echo "Security configuration modification detected. Flagging for SecOps review."
+          fi
+
+      - name: Run Static Analysis & Enforce Quality Gate
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        run: |
+          mvn clean verify sonar:sonar \
+            -Dsonar.qualitygate.wait=true # Hard block: fails the build if gate fails
+
+  deploy-gate:
+    needs: [static-security]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Proceed to Deployment
+        run: echo "Quality gates and SCA passed. Ready for staging."
